@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:id="@+id/rootLayout"
+    tools:context=".LoginActivity">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Pooling"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_user_app"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Looking for a Car?"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_above="@id/txt_user_app"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btnlogin"
+            android:layout_marginRight="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btnregister"
+            android:layout_marginRight="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
